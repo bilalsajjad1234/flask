@@ -106,7 +106,6 @@ def predict():
     except Exception as e:
         return jsonify({'status': 'error', 'message': str(e)})
 
-# R2 Score endpoint
 @app.route('/api/metrics', methods=['GET'])
 def metrics():
     try:
